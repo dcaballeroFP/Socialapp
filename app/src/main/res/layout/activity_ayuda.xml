@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="175dp"
+        android:layout_height="315dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/pantallaprincipal" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="107dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="AYUDA"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="170dp"
+        android:layout_height="307dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Esta es la documentacion de ayuda de la aplicacion socialapp con la que nos podremos comunicar con otros amigos que tengan instalada la aplicacion, podremos compartir texto, hacer fotos, audio, seleccionar fotos de nuestro sistema de ficheros tambien podremos indicar si nos gusta o no un post subido por un amigo o conocido. "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button_ayuda_newpost"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorPrimary"
+        android:onClick="ejecutar_ayuda_newpost"
+        android:text="NEWPOST"
+        app:layout_constraintBottom_toTopOf="@+id/button_ayuda_posts"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_ayuda_usuarios"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorPrimary"
+        android:onClick="ejecutar_ayuda_usuarios"
+        android:text="USUARIOS"
+        app:layout_constraintBottom_toTopOf="@+id/button_ayuda_like"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_ayuda_posts"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="44dp"
+        android:background="@color/colorPrimary"
+        android:onClick="ejecutar_ayuda_posts"
+        android:text="POSTS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_ayuda_like"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="44dp"
+        android:background="@color/colorPrimary"
+        android:onClick="ejecutar_ayuda_like"
+        android:text="LIKE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="345dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="Pulsa una de estas funcionalidades para saber mas."
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+</android.support.constraint.ConstraintLayout>
